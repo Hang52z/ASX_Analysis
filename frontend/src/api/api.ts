@@ -3,7 +3,7 @@ import { parse } from "papaparse";
 import type { Announcement } from "./types";
 
 export async function fetchAnnouncements(): Promise<Announcement[]> {
-  const res = await fetch("https://asx-analysis.vercel.app/announcements.csv");
+  const res = await fetch("https://asx-analysis.vercel.app/merged_announcements");
   if (!res.ok) throw new Error("Failed to fetch CSV");
   const csvText = await res.text();
   const { data, errors } = parse(csvText, {

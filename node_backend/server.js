@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 // 如果需要前端从其他域名或端口 fetch，打开 CORS
 app.use(cors({
-  origin: 'https://asx-analysis-5l51.vercel.app/',
+  origin: 'https://asx-analysis-5l51.vercel.app',
   methods: ['GET']
 }));
 
