@@ -3,7 +3,7 @@ import { parse } from "papaparse";
 import type { Announcement } from "./types";
 
 export async function fetchAnnouncements(): Promise<Announcement[]> {
-  const res = await fetch("http://44.204.5.152:3000");
+  const res = await fetch("https://d3ivte86kn0hrg.cloudfront.net/merged_announcements");
   if (!res.ok) throw new Error("Failed to fetch CSV");
   const csvText = await res.text();
   const { data, errors } = parse(csvText, {
