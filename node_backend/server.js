@@ -34,5 +34,5 @@ app.get('/merged_announcements', (req, res) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(PORT, () => {
-  console.log(`🚀 Node.js 服务启动： http://localhost:${PORT}/merged_announcements`);
+  console.log(`🚀 服务启动并监听 0.0.0.0:${PORT}`);
 });
