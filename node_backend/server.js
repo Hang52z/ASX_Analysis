@@ -9,10 +9,7 @@ const app  = express();
 const PORT = process.env.PORT || 3000;
 
 // 如果需要前端从其他域名或端口 fetch，打开 CORS
-app.use(cors({
-  origin: 'https://asx-analysis-5l51.vercel.app',
-  methods: ['GET']
-}));
+app.use(cors());
 
 // GET /announcements  → 返回 CSV 解析后的 JSON
 app.get('/merged_announcements', (req, res) => {
