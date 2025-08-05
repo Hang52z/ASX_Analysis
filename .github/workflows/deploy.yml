@@ -18,7 +18,7 @@ jobs:
       with:
         host: 44.204.5.152
         username: ubuntu
-        key: ${{ secrets.DEPLOY_KEY }}
+        key: ${{ secrets.EC2_KEY }}
         script: |
           cd ~/ASX_Analysis
           git pull
