@@ -18,7 +18,7 @@ jobs:
       with:
         host: 44.204.5.152
         username: ubuntu
-        key: ${{ secrets.AWS_SSH_KEY }}
+        key: ${{ secrets.DEPLOY_KEY }}
         script: |
           cd ~/ASX_Analysis
           git pull
